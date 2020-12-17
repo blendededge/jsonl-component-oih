@@ -1,0 +1,13 @@
+{
+  "title": "jsonl-component",
+  "description": "An Open Integration Hub component to  process JSONL files in a data flow. This includes storing a JSONL in the attachment storage service and reading a JSONL line by line.",
+  "credentials": {
+    "fields": {
+      "name": {
+        "label": "My API Key",
+        "required": true,
+        "viewClass": "TextFieldView"
+      }
+    }
+  }
+}
