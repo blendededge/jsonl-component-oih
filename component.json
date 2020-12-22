@@ -9,5 +9,24 @@
         "viewClass": "TextFieldView"
       }
     }
+  },
+  "actions": {
+    "readAttachment": {
+      "title": "readAttachment",
+      "main": "./lib/actions/readAttachment.js",
+      "description": "Description for readAttachment",
+      "dynamicMetadata": true,
+      "fields": {
+        "objectType": {
+          "viewClass": "SelectView",
+          "label": "Object Type",
+          "required": true,
+          "model": {
+            "attachment": "attachment"
+          },
+          "prompt": "Please select the object to look up"
+        }
+      }
+    }
   }
 }
