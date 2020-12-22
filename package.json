@@ -87,7 +87,7 @@
       "prettier"
     ]
   },
-  "repository": "false/jsonl-component",
+  "repository": "blendededge/jsonl-component",
   "jest": {
     "testEnvironment": "node"
   }
