@@ -25,6 +25,26 @@
             "attachment": "attachment"
           },
           "prompt": "Please select the object to look up"
+        },
+        "metadata": {
+          "in": {
+            "type": "object",
+            "properties": {
+              "filename": {
+                "title": "File Name",
+                "type": "string",
+                "required": false
+              }
+            }
+          }
+        },
+        "pattern": {
+          "label": "Pattern to Validate JSONL File Attachment",
+          "required": false
+        },
+        "validateExtension": {
+          "label": "Validate JSONL File Extension",
+          "required": false
         }
       }
     }
