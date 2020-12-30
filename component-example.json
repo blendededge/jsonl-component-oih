@@ -1,0 +1,13 @@
+{
+    "distribution": {
+      "type": "docker",
+      "image": "openintegrationhubcontainerregistry.azurecr.io/openintegrationhub/jsonl-component",
+      "pullSecret": "oih-acr-secret"
+    },
+    "access": "private",
+    "name": "JSONL Component",
+    "description": "iPaaS component to handle large JSONL files",
+    "descriptor": {
+      "actions": ["readAttachment"]
+    }
+}
