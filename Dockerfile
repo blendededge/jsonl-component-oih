@@ -9,10 +9,7 @@ COPY yarn.lock yarn.lock
 COPY README.md README.md
 
 FROM base AS dependencies
-RUN apk update && apk add --no-cache \
-    python \
-    g++ \
-    make
+
 RUN yarn install --production
 
 FROM base AS release
