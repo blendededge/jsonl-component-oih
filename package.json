@@ -1,8 +1,8 @@
 {
   "name": "jsonl-component",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "An Open Integration Hub component to  process JSONL files in a data flow. This includes storing a JSONL in the attachment storage service and reading a JSONL line by line.",
-  "homepage": "https://blendededge.com",
+  "license": "Apache-2.0",
   "author": {
     "name": "Robb Winkle",
     "email": "robb@blendededge.com",
@@ -43,11 +43,12 @@
   },
   "dependencies": {
     "@blendededge/ferryman-extensions": "^1.0.4",
-    "@elastic.io/component-commons-library": "1.1.2",
+    "@openintegrationhub/ferryman": "2.1.0",
     "elasticio-node": "0.0.9",
     "elasticio-rest-node": "1.1.0",
     "elasticio-sailor-nodejs": "2.6.7",
-    "object-sizeof": "^1.6.1"
+    "object-sizeof": "^1.6.1",
+    "uuid": "^8.3.2"
   },
   "scripts": {
     "pretest": "eslint .",
@@ -89,8 +90,12 @@
       "prettier"
     ]
   },
-  "repository": "blendededge/jsonl-component",
-  "jest": {
-    "testEnvironment": "node"
-  }
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/blendededge/jsonl-component-oih.git"
+  },
+  "bugs": {
+    "url": "https://github.com/blendededge/jsonl-component-oih/issues"
+  },
+  "homepage": "https://github.com/blendededge/jsonl-component-oih#readme"
 }
