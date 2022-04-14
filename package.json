@@ -1,8 +1,8 @@
 {
   "name": "jsonl-component",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "An Open Integration Hub component to  process JSONL files in a data flow. This includes storing a JSONL in the attachment storage service and reading a JSONL line by line.",
-  "homepage": "https://blendededge.com",
+  "license": "Apache-2.0",
   "author": {
     "name": "Robb Winkle",
     "email": "robb@blendededge.com",
@@ -27,26 +27,29 @@
     "dotenv": "8.1.0",
     "eslint": "^6.0.1",
     "eslint-config-airbnb-base": "14.0.0",
-    "eslint-plugin-import": "2.18.2",
-    "mocha": "6.0.2",
-    "sinon": "7.4.2",
-    "prettier": "^1.18.2",
-    "husky": "^3.0.1",
-    "lint-staged": "^9.2.0",
     "eslint-config-prettier": "^6.0.0",
-    "eslint-plugin-prettier": "^3.1.0",
     "eslint-config-xo": "^0.26.0",
-    "jest": "^26.1.0"
+    "eslint-plugin-import": "2.18.2",
+    "eslint-plugin-prettier": "^3.1.0",
+    "husky": "^3.0.1",
+    "jest": "^26.1.0",
+    "lint-staged": "^9.2.0",
+    "mocha": "6.0.2",
+    "prettier": "^1.18.2",
+    "sinon": "7.4.2"
   },
   "engines": {
     "npm": ">= 4.0.0"
   },
   "dependencies": {
-    "@elastic.io/component-commons-library": "1.1.2",
+    "@blendededge/ferryman-extensions": "^1.0.3",
+    "@openintegrationhub/ferryman": "^2.1.0",
+    "axios": "^0.26.1",
     "elasticio-node": "0.0.9",
     "elasticio-rest-node": "1.1.0",
     "elasticio-sailor-nodejs": "2.6.7",
-    "object-sizeof": "^1.6.1"
+    "object-sizeof": "^1.6.1",
+    "uuid": "^8.3.2"
   },
   "scripts": {
     "pretest": "eslint .",
@@ -88,8 +91,12 @@
       "prettier"
     ]
   },
-  "repository": "blendededge/jsonl-component",
-  "jest": {
-    "testEnvironment": "node"
-  }
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/blendededge/jsonl-component-oih.git"
+  },
+  "bugs": {
+    "url": "https://github.com/blendededge/jsonl-component-oih/issues"
+  },
+  "homepage": "https://github.com/blendededge/jsonl-component-oih#readme"
 }
