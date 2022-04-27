@@ -45,6 +45,9 @@
         "validateExtension": {
           "label": "Validate JSONL File Extension",
           "required": false
+        },
+        "attachmentServiceUrl": {
+          "label": "The URL for the Attachment Storage Service"
         }
       }
     }
