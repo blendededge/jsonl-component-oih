@@ -722,11 +722,6 @@ accepts@~1.3.7:
     mime-types "~2.1.34"
     negotiator "0.6.3"
 
-accounting@0.4.1:
-  version "0.4.1"
-  resolved "https://registry.npmjs.org/accounting/-/accounting-0.4.1.tgz"
-  integrity sha1-h91BA+/39EYPHhhvXGd+1s9WaIM=
-
 acorn-globals@^6.0.0:
   version "6.0.0"
   resolved "https://registry.npmjs.org/acorn-globals/-/acorn-globals-6.0.0.tgz"
@@ -1549,11 +1544,6 @@ cosmiconfig@^5.2.1:
     js-yaml "^3.13.1"
     parse-json "^4.0.0"
 
-crc@3.4.4:
-  version "3.4.4"
-  resolved "https://registry.npmjs.org/crc/-/crc-3.4.4.tgz"
-  integrity sha1-naHpgOO9RPxck79as9ozeNheRms=
-
 cross-spawn@^6.0.0, cross-spawn@^6.0.5:
   version "6.0.5"
   resolved "https://registry.npmjs.org/cross-spawn/-/cross-spawn-6.0.5.tgz"
@@ -1823,28 +1813,6 @@ ee-first@1.1.1:
   version "1.1.1"
   resolved "https://registry.npmjs.org/ee-first/-/ee-first-1.1.1.tgz"
   integrity sha1-WQxhFWsK4vTwJVcyoViyZrxWsh0=
-
-elasticio-node@0.0.9:
-  version "0.0.9"
-  resolved "https://registry.npmjs.org/elasticio-node/-/elasticio-node-0.0.9.tgz"
-  integrity sha512-a6L866L3msl1CkqZEXqx4EISiUHPEpKwyXQS76qFi8bw+SjBLy5fqQhfqK2dh7dcioCYAHeuhaowZLmGinX7Xg==
-  dependencies:
-    accounting "0.4.1"
-    crc "3.4.4"
-    moment "^2.22.1"
-    q "1.4.1"
-    request "^2.85.0"
-    stream-counter "1.0.0"
-    uuid "3.0.1"
-
-elasticio-rest-node@1.1.0:
-  version "1.1.0"
-  resolved "https://registry.npmjs.org/elasticio-rest-node/-/elasticio-rest-node-1.1.0.tgz"
-  integrity sha1-MrSvCmIBA8xvDz203cTwhqAuOWo=
-  dependencies:
-    lodash "^3.10.1"
-    q "^1.4.1"
-    request "^2.63.0"
 
 elasticio-rest-node@1.2.5:
   version "1.2.5"
@@ -4177,11 +4145,6 @@ lodash@4.17.4:
   resolved "https://registry.npmjs.org/lodash/-/lodash-4.17.4.tgz"
   integrity sha1-eCA6TRwyiuHYbcpkYONptX9AVa4=
 
-lodash@^3.10.1:
-  version "3.10.1"
-  resolved "https://registry.npmjs.org/lodash/-/lodash-3.10.1.tgz"
-  integrity sha1-W/Rejkm6QYnhfUgnid/RW9FAt7Y=
-
 log-symbols@2.2.0:
   version "2.2.0"
   resolved "https://registry.npmjs.org/log-symbols/-/log-symbols-2.2.0.tgz"
@@ -4432,7 +4395,7 @@ mocha@6.0.2:
     yargs-parser "11.1.1"
     yargs-unparser "1.5.0"
 
-moment@^2.10.6, moment@^2.22.1:
+moment@^2.10.6:
   version "2.29.3"
   resolved "https://registry.npmjs.org/moment/-/moment-2.29.3.tgz"
   integrity sha512-c6YRvhEo//6T2Jz/vVtYzqBzwvPT95JBQ+smCytzf7c50oMZRsR/a4w88aD34I+/QVSfnoAnSBFPJHItlOMJVw==
@@ -5082,7 +5045,7 @@ q@1.4.1:
   resolved "https://registry.npmjs.org/q/-/q-1.4.1.tgz"
   integrity sha1-VXBbzZPF82c1MMLCy8DCs63cKG4=
 
-q@1.5.1, q@^1.4.1:
+q@1.5.1:
   version "1.5.1"
   resolved "https://registry.npmjs.org/q/-/q-1.5.1.tgz"
   integrity sha1-fjL3W0E4EpHQRhHxvxQQmsAGUdc=
@@ -5234,7 +5197,7 @@ request-promise@^4.2.5:
     stealthy-require "^1.1.1"
     tough-cookie "^2.3.3"
 
-request@2.88.2, request@^2.63.0, request@^2.85.0, request@^2.88.0:
+request@2.88.2, request@^2.88.0:
   version "2.88.2"
   resolved "https://registry.npmjs.org/request/-/request-2.88.2.tgz"
   integrity sha512-MsvtOrfG9ZcrOwAW+Qi+F6HbD0CWXEh9ou77uOb7FM2WPhwT7smM833PzanhJLsgXjN89Ir6V2PczXNnMpwKhw==
@@ -5764,11 +5727,6 @@ stealthy-require@^1.1.0, stealthy-require@^1.1.1:
   version "1.1.1"
   resolved "https://registry.npmjs.org/stealthy-require/-/stealthy-require-1.1.1.tgz"
   integrity sha1-NbCYdbT/SfJqd35QmzCQoyJr8ks=
-
-stream-counter@1.0.0:
-  version "1.0.0"
-  resolved "https://registry.npmjs.org/stream-counter/-/stream-counter-1.0.0.tgz"
-  integrity sha1-kc8lac5NxQYf6816yyY5SloRR1E=
 
 string-argv@^0.3.0:
   version "0.3.1"
