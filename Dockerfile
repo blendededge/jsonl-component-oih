@@ -1,4 +1,7 @@
 FROM node:18-alpine AS base
+
+ENV ELASTICIO_OTEL_SERVICE_NAME=COMPONENT:JSONL
+
 WORKDIR /app
 RUN apk update && apk add --no-cache \
     bash
