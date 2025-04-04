@@ -16,8 +16,8 @@ FROM base AS dependencies
 
 # Enable corepack and install correct Yarn version
 RUN corepack enable && corepack prepare yarn@3.6.3 --activate
-# Clear Yarn cache and install dependencies
-RUN yarn cache clean && yarn install --production
+# Install production dependencies
+RUN yarn install --immutable --inline-builds
 
 FROM base AS release
 COPY --from=dependencies /app/node_modules ./node_modules
