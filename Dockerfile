@@ -9,10 +9,13 @@ COPY lib lib
 COPY component.json component.json
 COPY package.json package.json
 COPY yarn.lock yarn.lock
+COPY .yarnrc.yml .yarnrc.yml
 COPY README.md README.md
 
 FROM base AS dependencies
 
+# Enable corepack and install correct Yarn version
+RUN corepack enable && corepack prepare yarn@3.6.3 --activate
 RUN yarn install --production
 
 FROM base AS release
