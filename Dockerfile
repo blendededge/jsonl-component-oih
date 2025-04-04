@@ -10,6 +10,7 @@ COPY component.json component.json
 COPY package.json package.json
 COPY yarn.lock yarn.lock
 COPY .yarnrc.yml .yarnrc.yml
+COPY .yarn .yarn
 COPY README.md README.md
 
 FROM base AS dependencies
