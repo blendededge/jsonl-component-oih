@@ -8,16 +8,13 @@ RUN apk update && apk add --no-cache \
 COPY lib lib
 COPY component.json component.json
 COPY package.json package.json
-COPY yarn.lock yarn.lock
-COPY .yarnrc.yml .yarnrc.yml
+COPY package-lock.json package-lock.json
 COPY README.md README.md
 
 FROM base AS dependencies
 
-# Enable corepack and install correct Yarn version
-RUN corepack enable && corepack prepare yarn@3.6.3 --activate
 # Install production dependencies
-RUN yarn install --immutable --inline-builds
+RUN npm ci --only=production
 
 FROM base AS release
 COPY --from=dependencies /app/node_modules ./node_modules
