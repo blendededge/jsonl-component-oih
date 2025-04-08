@@ -8,12 +8,13 @@ RUN apk update && apk add --no-cache \
 COPY lib lib
 COPY component.json component.json
 COPY package.json package.json
-COPY yarn.lock yarn.lock
+COPY package-lock.json package-lock.json
 COPY README.md README.md
 
 FROM base AS dependencies
 
-RUN yarn install --production
+# Install production dependencies
+RUN npm ci --only=production
 
 FROM base AS release
 COPY --from=dependencies /app/node_modules ./node_modules
