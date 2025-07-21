@@ -660,9 +660,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@blendededge/ferryman-extensions@npm:^2.0.3":
-  version: 2.0.3
-  resolution: "@blendededge/ferryman-extensions@npm:2.0.3"
+"@blendededge/ferryman-extensions@npm:^2.1.0":
+  version: 2.2.0
+  resolution: "@blendededge/ferryman-extensions@npm:2.2.0"
   dependencies:
     "@opentelemetry/api": ^1.3.0
     "@opentelemetry/exporter-jaeger": ^1.8.0
@@ -673,8 +673,9 @@ __metadata:
     events: ^3.3.0
     jsonata: ^2.0.3
     lodash: ^4.17.21
+    proxyquire: ^2.1.3
     uuid: ^8.3.2
-  checksum: 49faac15e7ab0a39b996aee181a0169484d108ff0f6c2469c7c6b356749809b1b04d8cb18aed5560beefe0f24a430905bdadbaa2328c4ce7223f8f2a86a78adc
+  checksum: 4f5f36fd4dea00da3aadaf8f4e29aed7ea515a557b8c09bd6a17e578bf056f70a7c941c4fadd410283ad9dd1d6c931f718b56d05d9ee2ec862872512aca1a335
   languageName: node
   linkType: hard
 
@@ -1128,9 +1129,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@openintegrationhub/ferryman@npm:^2.3.0":
-  version: 2.3.0
-  resolution: "@openintegrationhub/ferryman@npm:2.3.0"
+"@openintegrationhub/ferryman@npm:^2.4.6":
+  version: 2.4.6
+  resolution: "@openintegrationhub/ferryman@npm:2.4.6"
   dependencies:
     amqplib: 0.8.0
     bunyan: 1.8.10
@@ -1148,7 +1149,7 @@ __metadata:
     request-promise-native: 1.0.5
     requestretry: 3.1.0
     uuid: 3.0.1
-  checksum: d36933765846fc680c9cca166068bb2b8597e40ef55a4f22be83f94b9406fecaf49fffa794d040180dece7aba4df92176aca694187cf1685657585fd7f8531b7
+  checksum: 3c3da84e9441547ef95f60bc28b54a9133500b31f2665ee180e95ed9be299f3cea4452c7523d002859abf86671ca8766f4302a20c1d82f3ffb4cfedb354fb5a9
   languageName: node
   linkType: hard
 
@@ -3640,6 +3641,16 @@ __metadata:
   languageName: node
   linkType: hard
 
+"fill-keys@npm:^1.0.2":
+  version: 1.0.2
+  resolution: "fill-keys@npm:1.0.2"
+  dependencies:
+    is-object: ~1.0.1
+    merge-descriptors: ~1.0.0
+  checksum: 6ac5ff60ff08f2f44d19e919c9ca579f4efaaa8c88232b4aab5a5b5522aeb8ec91501956e780cb2b44574fe4a4a337e9b43187829267d0b66a6bfedbafae893f
+  languageName: node
+  linkType: hard
+
 "fill-range@npm:^7.0.1":
   version: 7.0.1
   resolution: "fill-range@npm:7.0.1"
@@ -3850,6 +3861,13 @@ __metadata:
   version: 1.1.1
   resolution: "function-bind@npm:1.1.1"
   checksum: b32fbaebb3f8ec4969f033073b43f5c8befbb58f1a79e12f1d7490358150359ebd92f49e72ff0144f65f2c48ea2a605bff2d07965f548f6474fd8efd95bf361a
+  languageName: node
+  linkType: hard
+
+"function-bind@npm:^1.1.2":
+  version: 1.1.2
+  resolution: "function-bind@npm:1.1.2"
+  checksum: 2b0ff4ce708d99715ad14a6d1f894e2a83242e4a52ccfcefaee5e40050562e5f6dafc1adbb4ce2d4ab47279a45dc736ab91ea5042d843c3c092820dfe032efb1
   languageName: node
   linkType: hard
 
@@ -4163,6 +4181,15 @@ __metadata:
   dependencies:
     function-bind: ^1.1.1
   checksum: b9ad53d53be4af90ce5d1c38331e712522417d017d5ef1ebd0507e07c2fbad8686fffb8e12ddecd4c39ca9b9b47431afbb975b8abf7f3c3b82c98e9aad052792
+  languageName: node
+  linkType: hard
+
+"hasown@npm:^2.0.2":
+  version: 2.0.2
+  resolution: "hasown@npm:2.0.2"
+  dependencies:
+    function-bind: ^1.1.2
+  checksum: e8516f776a15149ca6c6ed2ae3110c417a00b62260e222590e54aa367cbcd6ed99122020b37b7fbdf05748df57b265e70095d7bf35a47660587619b15ffb93db
   languageName: node
   linkType: hard
 
@@ -4488,6 +4515,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"is-core-module@npm:^2.16.0":
+  version: 2.16.1
+  resolution: "is-core-module@npm:2.16.1"
+  dependencies:
+    hasown: ^2.0.2
+  checksum: 6ec5b3c42d9cbf1ac23f164b16b8a140c3cec338bf8f884c076ca89950c7cc04c33e78f02b8cae7ff4751f3247e3174b2330f1fe4de194c7210deb8b1ea316a7
+  languageName: node
+  linkType: hard
+
 "is-core-module@npm:^2.8.1":
   version: 2.9.0
   resolution: "is-core-module@npm:2.9.0"
@@ -4624,6 +4660,13 @@ __metadata:
   version: 7.0.0
   resolution: "is-number@npm:7.0.0"
   checksum: 456ac6f8e0f3111ed34668a624e45315201dff921e5ac181f8ec24923b99e9f32ca1a194912dc79d539c97d33dba17dc635202ff0b2cf98326f608323276d27a
+  languageName: node
+  linkType: hard
+
+"is-object@npm:~1.0.1":
+  version: 1.0.2
+  resolution: "is-object@npm:1.0.2"
+  checksum: 971219c4b1985b9751f65e4c8296d3104f0457b0e8a70849e848a4a2208bc47317d73b3b85d4a369619cb2df8284dc22584cb2695a7d99aca5e8d0aa64fc075a
   languageName: node
   linkType: hard
 
@@ -5463,8 +5506,8 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "jsonl-component@workspace:."
   dependencies:
-    "@blendededge/ferryman-extensions": ^2.0.3
-    "@openintegrationhub/ferryman": ^2.3.0
+    "@blendededge/ferryman-extensions": ^2.1.0
+    "@openintegrationhub/ferryman": ^2.4.6
     chai: ^4.3.10
     dotenv: ^16.3.1
     eslint: ^8.50.0
@@ -5891,6 +5934,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"merge-descriptors@npm:~1.0.0":
+  version: 1.0.3
+  resolution: "merge-descriptors@npm:1.0.3"
+  checksum: 52117adbe0313d5defa771c9993fe081e2d2df9b840597e966aadafde04ae8d0e3da46bac7ca4efc37d4d2b839436582659cd49c6a43eacb3fe3050896a105d1
+  languageName: node
+  linkType: hard
+
 "merge-stream@npm:^2.0.0":
   version: 2.0.0
   resolution: "merge-stream@npm:2.0.0"
@@ -6135,6 +6185,13 @@ __metadata:
     _mocha: bin/_mocha
     mocha: bin/mocha.js
   checksum: 406c45eab122ffd6ea2003c2f108b2bc35ba036225eee78e0c784b6fa2c7f34e2b13f1dbacef55a4fdf523255d76e4f22d1b5aacda2394bd11666febec17c719
+  languageName: node
+  linkType: hard
+
+"module-not-found-error@npm:^1.0.1":
+  version: 1.0.1
+  resolution: "module-not-found-error@npm:1.0.1"
+  checksum: ebd65339d4d5980dd55cd32dbf112ec02b8e33f30866312b94caeee4783322259f18cf2270e9d2e600df3bd1876c35612b87f5c2525c21885fb1f83e85a9b9b0
   languageName: node
   linkType: hard
 
@@ -6814,6 +6871,17 @@ __metadata:
   languageName: node
   linkType: hard
 
+"proxyquire@npm:^2.1.3":
+  version: 2.1.3
+  resolution: "proxyquire@npm:2.1.3"
+  dependencies:
+    fill-keys: ^1.0.2
+    module-not-found-error: ^1.0.1
+    resolve: ^1.11.1
+  checksum: a320f1a04d65aeb41625bfd6bbf848492523b730b07926b6c1ed48f9342f2a30c4a4c0b399e07391e76691b65f604773327767c33a8578e5e4ab19299ba46a02
+  languageName: node
+  linkType: hard
+
 "psl@npm:^1.1.28, psl@npm:^1.1.33":
   version: 1.8.0
   resolution: "psl@npm:1.8.0"
@@ -7110,6 +7178,19 @@ __metadata:
   languageName: node
   linkType: hard
 
+"resolve@npm:^1.11.1":
+  version: 1.22.10
+  resolution: "resolve@npm:1.22.10"
+  dependencies:
+    is-core-module: ^2.16.0
+    path-parse: ^1.0.7
+    supports-preserve-symlinks-flag: ^1.0.0
+  bin:
+    resolve: bin/resolve
+  checksum: ab7a32ff4046fcd7c6fdd525b24a7527847d03c3650c733b909b01b757f92eb23510afa9cc3e9bf3f26a3e073b48c88c706dfd4c1d2fb4a16a96b73b6328ddcf
+  languageName: node
+  linkType: hard
+
 "resolve@npm:^1.20.0":
   version: 1.22.0
   resolution: "resolve@npm:1.22.0"
@@ -7146,6 +7227,19 @@ __metadata:
   bin:
     resolve: bin/resolve
   checksum: c438ac9a650f2030fd074219d7f12ceb983b475da2d89ad3d6dd05fbf6b7a0a8cd37d4d10b43cb1f632bc19f22246ab7f36ebda54d84a29bfb2910a0680906d3
+  languageName: node
+  linkType: hard
+
+"resolve@patch:resolve@^1.11.1#~builtin<compat/resolve>":
+  version: 1.22.10
+  resolution: "resolve@patch:resolve@npm%3A1.22.10#~builtin<compat/resolve>::version=1.22.10&hash=c3c19d"
+  dependencies:
+    is-core-module: ^2.16.0
+    path-parse: ^1.0.7
+    supports-preserve-symlinks-flag: ^1.0.0
+  bin:
+    resolve: bin/resolve
+  checksum: 8aac1e4e4628bd00bf4b94b23de137dd3fe44097a8d528fd66db74484be929936e20c696e1a3edf4488f37e14180b73df6f600992baea3e089e8674291f16c9d
   languageName: node
   linkType: hard
 
