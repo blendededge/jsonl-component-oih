@@ -46,7 +46,7 @@
   },
   "dependencies": {
     "@blendededge/ferryman-extensions": "^2.1.0",
-    "@openintegrationhub/ferryman": "^2.3.0",
+    "@openintegrationhub/ferryman": "^2.4.7",
     "object-sizeof": "^2.6.3",
     "uuid": "^9.0.1"
   },
